@@ -1,11 +1,14 @@
 # 👋This is a simple project to code evaluation system of LLM using Python.🧙‍♂️
 
-## To run this project, you need to install virtual environment.
-If you are not familiar with python venv setting, please consult any material. Here's brief introduction.
+## To run this project
+you need to install virtual environment.
+If you are not familiar with python venv setting, please consult any material. 
+#### Here's brief introduction.
 python3 -m venv env
 source env/bin/activate
 
-## Required packages are pytorch, matplotlib, tiktoken, seaborn, numpy.
+## Required packages
+#### are pytorch, matplotlib, tiktoken, seaborn, numpy.
 If you are not familiar with python package installation, please consult any material. 
 Simply, you can install those by typing this command on your bash.
 pip install "package name"
