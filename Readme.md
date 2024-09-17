@@ -13,7 +13,7 @@ If you are not familiar with python package installation, please consult any mat
 Simply, you can install those by typing this command on your bash.
 pip install "package name"
 
-## Then run showcase.py or principles.py. The other files are consisting class structure of LLM.
+Then run showcase.py or principles.py. The other files are consisting class structure of LLM.
 
 ## Description
 
