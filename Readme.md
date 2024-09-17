@@ -14,18 +14,18 @@ pip install "package name"
 
 ## Description
 
-### GPTModel
+### -GPTModel
 is the highest leveled class and it is consisted of TransformerBlock (backbone of LLM evaluation) and LayerNorm (normalization class).
 
-### TransformerBlocker
+### -TransformerBlocker
 is consisted of LayerNorm, Attention (self-attention, mask mechanism), FeedForward (forward propagation procedure).
 
-### FeedForward
+### -FeedForward
 contains GELU (activation fucntion, the most ideal for non-linear solution at the moment).
 You can see difference and preferable feature of GELU compared with RELU (another widely-used activation function) in "difference between RELU and GELU". It draws graph.
 
-### And also, running "test-activate function" will clarify you the mechanism of activate function via nice pictures.
+### *And also, running "test-activate function" will clarify you the mechanism of activate function via nice pictures.
 
-### "short story.txt"
+### -"short story.txt"
 is just a prepared training data. It will be used importantly in next chapter's code. Here, it is used to show you more brief result of evaluation.
 principles.py used "short story.txt" as the source of its dictionary. Thus, its output will be consisted of words only in that ".txt" file. To achieve constructing dictionary in principles.py, we need to use SimpleTokenizerV2, which is implemented in chapter 2 for basic contetualization. Actually, it won't be used in real developing challenge, but here the most effective for fast, stable, normalized and vanishing gradients avoided understanding!!!!!
