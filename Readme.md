@@ -57,8 +57,9 @@ source env/bin/activate
     ```
 
     or
-
+     ```sh
     pip install pytorch, matplotlib, tiktoken, seaborn, numpy
+    ```
 
 ## Usage
 
@@ -68,13 +69,11 @@ source env/bin/activate
     python principles.py
     ```
 
-2. **Input Prompts**:
-    - **State Name**: Enter the name of the state or press Enter for 'all'.
-    - **City Name**: Enter the name of the city or press Enter for 'all'.
-    - **Start Date**: Enter the start date in `YYYY-MM-DD` format or press Enter for '2014-01-01'.
-    - **End Date**: Enter the end date in `YYYY-MM-DD` format or press Enter for '2023-12-31'.
+2. **Change of input in code so as to evaluate various string**:
+    - **In showcase.py**: line 35 : start_context = "Type your text"
+    - **In principles.py**: line 47 : text = "Type your text"
 
-    The script will fetch GitHub user data based on the provided inputs and save it into CSV files.
+    The script will print different output for the same input because each file of both is modeled with different initiative structure : for showcase.py GPT2, for principles.py manually coded one.
 
 ## Project Structure
 
