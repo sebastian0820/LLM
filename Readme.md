@@ -8,8 +8,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Logging](#logging)
-- [API Rate Limiting](#api-rate-limiting)
 - [Contributing](#contributing)
 
 ## Prerequisites
@@ -77,36 +75,12 @@ source env/bin/activate
 
 ## Project Structure
 
-- `main.py`: Main script that contains the logic to fetch and save GitHub user data.
-- `states/`: Directory containing CSV files for each state with city information.
-- `accounts/`: Directory where fetched account data will be saved.
-- `users/`: Directory where fetched user data will be saved.
-- `error.log`: Log file for capturing errors.
+- `showcase.py`: Main script that contains the logic to predict next string for various input using GPT2.
+- `principles.py`: Another main script that contains the logic to predict next string for various input using manually coded model.
+- `short story.txt`: Texts for pretraining manually coded model. You can change it to see how the model's dictionary changes.
+- `difference between RELU and GELU.py`: Show the graphical description how RELU and GELU differ in their function.
 
-### -GPTModel
-is the highest leveled class and it is consisted of TransformerBlock (backbone of LLM evaluation) and LayerNorm (normalization class).
-
-### -TransformerBlocker
-is consisted of LayerNorm, Attention (self-attention, mask mechanism), FeedForward (forward propagation procedure).
-
-### -FeedForward
-contains GELU (activation fucntion, the most ideal for non-linear solution at the moment).
-You can see difference and preferable feature of GELU compared with RELU (another widely-used activation function) in "difference between RELU and GELU". It draws graph.
-
-### *And also, running "test-activate function" will clarify you the mechanism of activate function via nice pictures.
-
-### -"short story.txt"
-is just a prepared training data. It will be used importantly in next chapter's code. Here, it is used to show you more brief result of evaluation.
-principles.py used "short story.txt" as the source of its dictionary. Thus, its output will be consisted of words only in that ".txt" file. To achieve constructing dictionary in principles.py, we need to use SimpleTokenizerV2, which is implemented in chapter 2 for basic contetualization. Actually, it won't be used in real developing challenge, but here the most effective for fast, stable, normalized and vanishing gradients avoided understanding!!!!!
-
-
-## Logging
-
-Errors encountered during execution are logged in `error.log`. You can review this file to debug issues.
-
-## API Rate Limiting
-
-The script includes logic to handle GitHub API rate limiting by pausing execution and retrying requests when the rate limit is exceeded.
+The other files are class files used in above files. Do not manipulate those. 
 
 ## Contributing
 
