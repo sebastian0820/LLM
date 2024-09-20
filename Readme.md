@@ -18,13 +18,6 @@ Ensure you have the following installed on your machine:
 - `pip` (Python package installer)
 - `virtualenv` (optional but recommended)
 
-## To run this project
-you need to install virtual environment.
-If you are not familiar with python venv setting, please consult any material. 
-#### Here's brief introduction.
-python3 -m venv env
-source env/bin/activate
-
 ## Installation
 
 1. **Clone the Repository**:
