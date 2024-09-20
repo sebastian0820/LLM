@@ -73,7 +73,7 @@ Ensure you have the following installed on your machine:
 - `short story.txt`: Texts for pretraining manually coded model. You can change it to see how the model's dictionary changes.
 - `difference between RELU and GELU.py`: Show the graphical description how RELU and GELU differ in their function.
 
-The other files are class files used in above files. Do not manipulate those. 
+    The other files are class files used in above files. Do not manipulate those. 
 
 ## Contributing
 
